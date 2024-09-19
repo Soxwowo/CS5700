@@ -1,17 +1,13 @@
+#Jitong Zou
+#CS5700
 import http.client
 import sys
 
 def get_resource(resource):
-    '''
-    Insert your code here.    
-
-
-    '''
     # Create a connection to the server
     conn = http.client.HTTPConnection('localhost', 8070)
 
     # Send a GET request for the resource
-    # 发送GET请求
     if resource.endswith(".html"):
         headers = {"Content-Type": "text/html"}
     elif resource.endswith(".json"):
