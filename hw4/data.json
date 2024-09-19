@@ -1,0 +1,38 @@
+{
+    "library": {
+        "name": "City Central Library",
+        "location": "123 Library Street, Booktown",
+        "books": [
+            {
+                "title": "The Great Adventure",
+                "author": "Alice Smith",
+                "year": 2018,
+                "genres": ["Adventure", "Fantasy"]
+            },
+            {
+                "title": "History of the Ancient World",
+                "author": "John Doe",
+                "year": 2011,
+                "genres": ["History", "Education"]
+            },
+            {
+                "title": "Cooking with Flavors",
+                "author": "Maria Garcia",
+                "year": 2020,
+                "genres": ["Cooking", "Lifestyle"]
+            },
+            {
+                "title": "Science and Technology Today",
+                "author": "James Lee",
+                "year": 2019,
+                "genres": ["Science", "Technology"]
+            },
+            {
+                "title": "Gardening for Beginners",
+                "author": "Sophie Turner",
+                "year": 2015,
+                "genres": ["Gardening", "Hobby"]
+            }
+        ]
+    }
+}
