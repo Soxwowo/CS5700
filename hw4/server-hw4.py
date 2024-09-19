@@ -1,3 +1,5 @@
+#Jitong Zou
+#CS5700
 from http.server import SimpleHTTPRequestHandler, HTTPServer
 import json
 import mimetypes
