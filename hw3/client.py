@@ -11,6 +11,7 @@ PORT = 65432
 args = sys.argv
 num = args[1] # Get the number passed to the script
 
+
 # Create a TCP/IP socket
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s: 
     # Connect to the server
