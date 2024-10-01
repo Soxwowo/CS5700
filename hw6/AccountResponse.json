@@ -1,0 +1,231 @@
+{
+    "totalSize": 13,
+    "done": true,
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18fhAAB"
+            },
+            "Name": "Edge Communications",
+            "Id": "001bm00000Q18fhAAB",
+            "BillingAddress": {
+                "city": "Austin",
+                "country": null,
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": null,
+                "state": "TX",
+                "street": "312 Constitution Place\nAustin, TX 78767\nUSA"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18fiAAB"
+            },
+            "Name": "Burlington Textiles Corp of America",
+            "Id": "001bm00000Q18fiAAB",
+            "BillingAddress": {
+                "city": "Burlington",
+                "country": "USA",
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": "27215",
+                "state": "NC",
+                "street": "525 S. Lexington Ave"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18fjAAB"
+            },
+            "Name": "Pyramid Construction Inc.",
+            "Id": "001bm00000Q18fjAAB",
+            "BillingAddress": {
+                "city": "Paris",
+                "country": "France",
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": "75251",
+                "state": null,
+                "street": "2 Place Jussieu"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18fkAAB"
+            },
+            "Name": "Dickenson plc",
+            "Id": "001bm00000Q18fkAAB",
+            "BillingAddress": {
+                "city": "Lawrence",
+                "country": "USA",
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": "66045",
+                "state": "KS",
+                "street": "1301 Hoch Drive"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18flAAB"
+            },
+            "Name": "Grand Hotels & Resorts Ltd",
+            "Id": "001bm00000Q18flAAB",
+            "BillingAddress": {
+                "city": "Chicago",
+                "country": null,
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": null,
+                "state": "IL",
+                "street": "2334 N. Michigan Avenue, Suite 1500\nChicago, IL 60601, USA"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18fmAAB"
+            },
+            "Name": "United Oil & Gas Corp.",
+            "Id": "001bm00000Q18fmAAB",
+            "BillingAddress": {
+                "city": "New York",
+                "country": null,
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": null,
+                "state": "NY",
+                "street": "1301 Avenue of the Americas \r\nNew York, NY 10019\r\nUSA"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18fnAAB"
+            },
+            "Name": "Express Logistics and Transport",
+            "Id": "001bm00000Q18fnAAB",
+            "BillingAddress": {
+                "city": "Portland",
+                "country": null,
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": null,
+                "state": "OR",
+                "street": "620 SW 5th Avenue Suite 400\nPortland, Oregon 97204\nUnited States"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18foAAB"
+            },
+            "Name": "University of Arizona",
+            "Id": "001bm00000Q18foAAB",
+            "BillingAddress": {
+                "city": "Tucson",
+                "country": null,
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": null,
+                "state": "AZ",
+                "street": "888 N Euclid \nHallis Center, Room 501\nTucson, AZ 85721\nUnited States"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18fpAAB"
+            },
+            "Name": "United Oil & Gas, UK",
+            "Id": "001bm00000Q18fpAAB",
+            "BillingAddress": {
+                "city": null,
+                "country": null,
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": null,
+                "state": "UK",
+                "street": "Kings Park, 17th Avenue, Team Valley Trading Estate,\nGateshead, Tyne and Wear NE26 3HS\nUnited Kingdom"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18fqAAB"
+            },
+            "Name": "United Oil & Gas, Singapore",
+            "Id": "001bm00000Q18fqAAB",
+            "BillingAddress": {
+                "city": "Singapore",
+                "country": null,
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": null,
+                "state": "Singapore",
+                "street": "9 Tagore Lane\nSingapore, Singapore 787472\nSingapore"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18frAAB"
+            },
+            "Name": "GenePoint",
+            "Id": "001bm00000Q18frAAB",
+            "BillingAddress": {
+                "city": "Mountain View",
+                "country": null,
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": null,
+                "state": "CA",
+                "street": "345 Shoreline Park\nMountain View, CA 94043\nUSA"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q18fsAAB"
+            },
+            "Name": "sForce",
+            "Id": "001bm00000Q18fsAAB",
+            "BillingAddress": {
+                "city": "San Francisco",
+                "country": "US",
+                "geocodeAccuracy": null,
+                "latitude": null,
+                "longitude": null,
+                "postalCode": "94087",
+                "state": "CA",
+                "street": "The Landmark @ One Market"
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v55.0/sobjects/Account/001bm00000Q19ALAAZ"
+            },
+            "Name": "Sample Account for Entitlements",
+            "Id": "001bm00000Q19ALAAZ",
+            "BillingAddress": null
+        }
+    ]
+}
