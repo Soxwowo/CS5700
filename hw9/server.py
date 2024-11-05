@@ -1,58 +1,56 @@
+# Jitong Zou
+# CS5700
+# Homework 9-Web Server
 from socket import *
 import sys
 
-def get_server_ip():
-    # Dynamically get the server's IP address
-    hostname = gethostname()
-    return gethostbyname(hostname)
+def handle_client(connection_socket, requested_file):
+    # Message of successful connection
+    connection_socket.send("\nConnection Successful!\n\n".encode())
 
-def run_server(port):
-    server_ip = get_server_ip()
-    print(f"Server IP address: {server_ip}")
-    print(f"Server port number: {port}")
-    print("Ready to serve...")
+    # Attempt to read the content of the requested HTML file
+    try:
+        with open(requested_file, 'r') as file:
+            content = file.read()
+            response = "\nHTTP/1.1 200 OK\n\n\n\n" + content + "\n"
+    except FileNotFoundError:
+        response = "\nHTTP/1.1 404 Not Found\n\n\n\n"
 
-    with socket(AF_INET, SOCK_STREAM) as s:
-        s.bind((server_ip, port))
-        s.listen()
-        
-        while True:
-            conn, addr = s.accept()
-            with conn:
-                print(f"Connected by {addr}")
-                data = conn.recv(1024).decode()
+    # Send HTTP response in the specified format
+    connection_socket.send("---------------HTTP RESPONSE---------------\n".encode())
+    connection_socket.send(response.encode())
+    connection_socket.send("---------------END OF HTTP RESPONSE---------------\n".encode())
 
-                if not data:
-                    continue
-
-                # Parse the incoming GET request
-                request_line = data.split('\n')[0]
-                if "GET" in request_line:
-                    file_name = request_line.split()[1].strip('/')
-
-                    # Attempt to open the file
-                    try:
-                        with open(file_name, 'r') as file:
-                            file_content = file.read()
-                        response = "Connection Successful!\n"
-                        response += "---------------HTTP RESPONSE---------------\n"
-                        response += "HTTP/1.1 200 OK\n"
-                        response += file_content + "\n"
-                        response += "---------------END OF HTTP RESPONSE---------------\n"
-                    except FileNotFoundError:
-                        response = "Connection Successful!\n"
-                        response += "---------------HTTP RESPONSE---------------\n"
-                        response += "HTTP/1.1 404 Not Found\n"
-                        response += "---------------END OF HTTP RESPONSE---------------\n"
-                else:
-                    response = "Invalid Request!"
-
-                conn.sendall(response.encode())
-
-if __name__ == "__main__":
+def main():
     if len(sys.argv) != 2:
-        print("Usage: python server.py <PORT>")
+        print("Usage: python server.py <port>")
         sys.exit(1)
 
+    # Get port number
     port = int(sys.argv[1])
-    run_server(port)
+    server_socket = socket(AF_INET, SOCK_STREAM)
+    server_socket.bind(('', port))
+    server_socket.listen(1)
+
+    # Dynamically obtain server IP address
+    server_ip = gethostbyname(gethostname())
+    print(f"server IP address: {server_ip}")
+    print(f"server port number: {port}")
+    print("Ready to serve...")
+
+    # Loop waiting for client connection
+    while True:
+        connection_socket, addr = server_socket.accept()
+        try:
+            # Receive and parse requests, obtain file names
+            request = connection_socket.recv(1024).decode()
+            requested_file = request.split()[1]  
+            handle_client(connection_socket, requested_file)
+        except Exception as e:
+            print(f"Error: {e}")
+        finally:
+            connection_socket.close()
+
+if __name__ == "__main__":
+    main()
+
