@@ -6,7 +6,7 @@ import sys
 
 def handle_client(connection_socket, requested_file):
     # Message of successful connection
-    connection_socket.send("\nConnection Successful!\n\n".encode())
+    connection_socket.send("\nConnection Successful!\n\n\n".encode())
 
     # Attempt to read the content of the requested HTML file
     try:
@@ -35,7 +35,7 @@ def main():
     # Dynamically obtain server IP address
     server_ip = gethostbyname(gethostname())
     print(f"server IP address: {server_ip}")
-    print(f"server port number: {port}")
+    print(f"server port number: {port}\n\n")
     print("Ready to serve...")
 
     # Loop waiting for client connection
